@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ffffff, #ffd700);
+    color: #222;
+}
+
+/*HERO SECTION*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-image img {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0 0 15px 0;
+}
+
+.hero-text{
+    max-width: 700px;
+    color : #286F7B;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+.skills {
+    padding: 60px;
+    background: #f0f7ff;
+    margin: 20px;
+    border-radius: 12px;
+
+}
+.skills h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.badges {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+}
+
+.bdg{
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/*HERO SECTION*/
+.info {
+    display: flex;
+    gap: 40px;
+    background: #fff6ee;
+    padding: 60px;
+    margin: 30px;
+    border-radius: 12px;
+}
+.info-box {
+    flex: 1;
+}
+
+.info-box h2 {
+    font-size: 26px;
+}
+.info-box ul {
+    font-size: 20px;
+}
+
+.info-box li:marker {
+    font-size: 30px;
+}
+
+/*PROJECTS SECTION*/
+.projetcs {
+    background: #eef7f1;
+    padding: 60ppx;
+    margin: 30px;
+    border-radius: 12px;
+}
+
+.projects h2 {
+    font-size: 50px;
+    text-align: center;
+    color : #286F7B;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.project-card {
+    background: linear-gradient(180deg, #ffffff, #ffb6c1);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 20px;
+}
+.project-card img {
+    width: auto;
+    height: 180px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+.project-card h3 {
+    font-size: 20px;
+}
+.project-card p {
+    font-size: 16px;
+}
+
+#selectedSkillText {
+    font-size: 26px;
+    text-align: center;
+
+}
+
+.bdg.selected {
+    background: #E3AFD0
+}
+/* Profile Toggle Button */
+#togglePorfileBtn {
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#toggleProfileBtn:hover {
+    opacity: 0.7;
+
+}
+.contact {
+    background: linear-gradient(180deg, #ffffff, #000000);
+    padding: 60px;
+    margin: 30px;
+    border-radius: 12px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 50;
+}
+
+.contact label {
+    display: block;
+    font-size: 18px;
+    margin: 12px 0 6px 0;
+}
+
+.contact input,
+.contact textarea {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#sendEmailButton {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}

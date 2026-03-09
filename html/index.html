@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1 id="hero-title">Plumeline</h1>
+                <p id="hero-description">Ils possèdent le nouveau talent Danseuse, qui n’avait encore jamais été observé chez un Pokémon. Lorsqu’une capacité de danse est utilisée pendant un combat, les Plumeline peuvent immédiatement la reproduire grâce à ce talent.
+
+		  La Danse Éveil est une capacité que seuls les Plumeline peuvent apprendre et dont le type change en fonction du style du Plumeline. </p>
+
+		<button id="togglePorfileBtn">Switch Profile</button>
+            </div>
+            <div class="hero-image">
+                <img id="profileImage" src="jujupas.png" alt="My Photo">
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="badges">
+                <span class="bdg">HTML</span>
+                <span class="bdg">CSS</span>
+                <span class="bdg">JavaScript</span>
+                <span class="bdg">Python</span>
+                <span class="bdg">GitHub</span>
+                <span class="bdg">Figma</span>
+                <span class="bdg">Anglais C2</span>
+                <span class="bdg">Arabe C2</span>
+            </div>
+            <p id="selectedSkillText">Selected Skill: none</p>
+        </section>
+
+        <section class="info">
+            <div class="info-box">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Travel</li>
+                    <li>Reading</li>
+                    <li>Eating</li>
+                </ul>
+            </div>
+            <div class="info-box">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Arabic</li>
+                    <li>Spanish</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Danses de Plumeline</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="oricorio1.gif" alt="Project 1" />
+                    <h3>Le type de Plumeline Pom-Pom</h3>
+                    <p>Vol-Electrique</p>
+                </div>
+                <div class="project-card">
+                    <img src="oricorio.gif" alt="Project 2" />
+                    <h3>Ethymologie</h3>
+                    <p>Français : Plumeline pourrait venir de plume et de ballerine.</p>
+                </div>
+                <div class="project-card">
+                    <img src="oricorio3.gif" alt="Project 3" />
+                    <h3>Shiny de Plumeline Pom-Pom</h3>
+                    <p>Le jaune foncé de son corps s'inverse avec le blanc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 200px;">
+            <h2>Tests</h2>
+            <button id="HelloBtn">Click Me!</button>
+            <h1 id="counter">0</h1>
+            <p id="message"></p>
+            <button id="displayProfileBtn">Voir toutes les formes</button>
+            <div id="profile"></div>
+	    
+	    <section class="contact">
+	      <h2>Contact Me</h2>
+
+	      <label for="subjectInputId">Subject</label>
+	      <input id="subjectInputId" type="text"/>
+	      <label for="messageInputId">Message</label>
+	      <input id="messageInputId" rows="5"/></textarea>
+		<button id="sendEmailButton">Send Email</button>
+	      
+	    </section>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
