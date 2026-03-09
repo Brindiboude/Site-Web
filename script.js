@@ -24,7 +24,7 @@ buttonTest.addEventListener("click", function () {
 
 displayProfileButton.addEventListener("click", function () {
     profileDiv.innerHTML = `
-        <img src="allforms.jpg" alt="Photo" width="500">
+        <img src="html/allforms.jpg" alt="Photo" width="500">
         <p>Tous les plumelines de chaque ile</p>
     `;
 });
@@ -54,12 +54,12 @@ const profiles = [
     {
         name: "Plumeline contente",
         description: "Meilleure danse de Plumeline",
-        image: "plumeline.webp"
+        image: "html/plumeline.webp"
     },
     {
         name: "Plumeline festive",
         description: "Plumeline qui s'amuse en dansant",
-        image: "pluplu.jpg"
+        image: "html/pluplu.jpg"
     }
 ];
 
