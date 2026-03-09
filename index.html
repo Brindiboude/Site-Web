@@ -5,15 +5,21 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-
-        <section class="hero">
+      <nav class="navbar">
+	<a href="#accueil">Accueil</a>
+    <a href="#skills">Skills</a>
+    <a href="#infos">Infos</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact">Contact</a>
+    <button id="darkModeBtn">Dark Mode</button>
+      </nav>
+        <section id="accueil" class="hero">
             <div class="hero-text">
-                <h1 id="hero-title">Plumeline</h1>
-                <p id="hero-description">Ils possèdent le nouveau talent Danseuse, qui n’avait encore jamais été observé chez un Pokémon. Lorsqu’une capacité de danse est utilisée pendant un combat, les Plumeline peuvent immédiatement la reproduire grâce à ce talent.
+                <h1 id="hero-title">Plumeline Jujupas</h1>
+                <p id="hero-description"> Ce Plumeline se surnomme "Jujupas" parce que sa dresseuse l'a surnommé ainsi. Pourquoi ? Tout simplement car sa dresseuse se s'appelait "Julie" et a fait un jeu de mot avec "Il ne juge pas". </p>
 
-		  La Danse Éveil est une capacité que seuls les Plumeline peuvent apprendre et dont le type change en fonction du style du Plumeline. </p>
-
-		<button id="togglePorfileBtn">Switch Profile</button>
+		<button id="prevBtn">Previous</button>
+		<button id="nextBtn">Next</button>
             </div>
             <div class="hero-image">
                 <img id="profileImage" src="html/jujupas.png" alt="My Photo">
@@ -33,6 +39,7 @@
                 <span class="bdg">Arabe C2</span>
             </div>
             <p id="selectedSkillText">Selected Skill: none</p>
+	    <p id="skillClickCount">Nombre de skills cliqués : 0</p>
         </section>
 
         <section class="info">
@@ -74,29 +81,53 @@
                     <h3>Shiny de Plumeline Pom-Pom</h3>
                     <p>Le jaune foncé de son corps s'inverse avec le blanc.</p>
                 </div>
+		<div class="project-card">
+		  <img src="html/crow.gif" alt="Project 4" />
+		  <h3>Citation</h3>
+		  <p>The crow does not sing in their joy, it leaves when their spring arrives<br>-Yanis.H</p>
+		</div>
             </div>
         </section>
 
-        <section style="margin-bottom: 200px;">
+	<section style="margin-bottom: 200px;">
             <h2>Tests</h2>
             <button id="HelloBtn">Click Me!</button>
             <h1 id="counter">0</h1>
             <p id="message"></p>
             <button id="displayProfileBtn">Voir toutes les formes</button>
             <div id="profile"></div>
-	    
-	    <section class="contact">
-	      <h2>Contact Me</h2>
-
-	      <label for="subjectInputId">Subject</label>
-	      <input id="subjectInputId" type="text"/>
-	      <label for="messageInputId">Message</label>
-	      <input id="messageInputId" rows="5"/></textarea>
-		<button id="sendEmailButton">Send Email</button>
-	      
-	    </section>
         </section>
-
+	
+        <section id="contact" class="contact">
+          <h2>Contact Me</h2>
+            <label for="subjectInputId">Subject</label>
+            <input id="subjectInputId" type="text"/>
+            <p id="subjectError" style="color: red;"></p>
+            <label for="messageInputId">Message</label>
+            <textarea id="messageInputId" rows="5"></textarea>
+            <p id="messageError" style="color: red;"></p>
+            <button id="sendEmailButton">Send Email</button>
+        </section>
+	<section class="testimonials">
+	  <h2>Avis</h2>
+	  <div class="testimonials-grid">
+            <div class="testimonial-card">
+	      <img src="html/Akala.webp" alt="Avis 1"/>
+              <h3>Plumeline Flamenco</h3>
+              <p>Il est de type Vol-Feu</p>
+            </div>
+            <div class="testimonial-card">
+	      <img src="html/Ula.jpg" alt="Avis 2"/>
+              <h3>Plumeline Hula</h3>
+              <p>Il est de type Vol-Psy</p>
+            </div>
+            <div class="testimonial-card">
+	      <img src="html/Huyo.jpg" alt="Avis 3"/>
+              <h3>Plumeline Buyō</h3>
+              <p>Il est de type Vol-Spectre</p>
+        </div>
+    </div>
+</section>
         <script src="script.js"></script>
     </body>
 </html>
